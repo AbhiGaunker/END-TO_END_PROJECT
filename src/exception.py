@@ -1,5 +1,6 @@
 import sys
 
+
 def error_message_detail(error,error_details: sys):
     _,_,exc_ab = error_details.exc_info()
     file_name = exc_ab.tb_frame.f_code.co_filename
@@ -14,5 +15,4 @@ class CustomException(Exception):
 
     def __str__ (self):
         return self.error_message
-
 
